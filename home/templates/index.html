@@ -26,7 +26,7 @@
         <!--================Header Menu Area =================-->
         <header class="header_area">
            	<div class="top_menu row m0"  style="background-color: lightblue">
-           		<div class="container">
+           		<div class="container-fluid">
 					<div class="float-left">
 						<ul class="list header_social">
 							<li><a href="#"><i class="fa fa-facebook" style="color: blue"></i></a></li>
@@ -40,6 +40,7 @@
 						<input class="form-control mx-1" type="text" placeholder="Username" name="username">
 						<input class="form-control "type="password" placeholder="Password" name="psw">
 						<button class="btn btn-success mx-1" type="submit">Login</button>
+						<button class="btn btn-success mx-1" type="submit">Register</button>
 						</form>
 					</div>
            		</div>	
@@ -57,29 +58,30 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item submenu dropdown">
+								<li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li> 
+								{% comment %} <li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a>
 										<li class="nav-item"><a class="nav-link" href="course-details.html">Course Details</a></li>
 									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
+								</li>  {% endcomment %}
+								{% comment %} <li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
 									</ul>
-								</li> 
+								</li>  {% endcomment %}
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+										<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="{% url 'single_blog' %}">Blog Details</a></li>
 									</ul>
 								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -91,10 +93,10 @@
         <!--================Home Banner Area =================-->
         <section class="home_banner_area">
             <div class="banner_inner d-flex align-items-center">
-            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.6" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
-					<div class="banner_content text-center">
-						<h3>We Ensure better education <br />for a better world</h3>
+					<div class="banner_content text-center" style="color: blue">
+						<h3><br><br><br><br><br><br>We Ensure better education <br />for a better world</h3>
 						<p>In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble.</p>
 						<a class="main_btn" href="#">Get Started</a>
 					</div>
