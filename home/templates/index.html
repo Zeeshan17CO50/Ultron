@@ -35,17 +35,17 @@
 							<li><a href="#"><i class="fa fa-behance" style="color: blue"></i></a></li>
 						</ul>
 					</div>
-					<div class="float-right my-1" >
+					{% comment %} <div class="float-right my-1" >
 						<form class="input-group d-flex flex-row" action="/action_page.php">
 						<input class="form-control mx-1" type="text" placeholder="Username" name="username">
 						<input class="form-control "type="password" placeholder="Password" name="psw">
 						<button class="btn btn-success mx-1" type="submit">Login</button>
-						<button class="btn btn-success mx-1" type="submit">Register</button>
+						<button class="btn btn-success mx-1" href="{% url 'reg' %}" type="submit">Register</button>
 						</form>
-					</div>
+					</div> {% endcomment %}
            		</div>	
            	</div>	
-            <div class="main_menu">
+            <div class="main_menu" style="background-color: pink">
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -82,6 +82,7 @@
 								</li> 
 								<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 								<li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a></li>
+								<li class="nav-item"><a class="nav-link" href="{% url 'reg' %}">Register</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -91,14 +92,14 @@
         <!--================Header Menu Area =================-->
         
         <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
+        <section class="home_banner_area" style="background-color: pink">
             <div class="banner_inner d-flex align-items-center">
             	<div class="overlay bg-parallax" data-stellar-ratio="0.6" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
-					<div class="banner_content text-center" style="color: blue">
+					<div class="banner_content text-center" style="color: purple">
 						<h3><br><br><br><br><br><br>We Ensure better education <br />for a better world</h3>
-						<p>In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble.</p>
-						<a class="main_btn" href="#">Get Started</a>
+						<a class="main_btn" href="{% url 'ages' %}">Get Started</a><br>
+						<a class="main_btn" href="{% url 'reg' %}">I Already have an Account</a>
 					</div>
 				</div>
             </div>

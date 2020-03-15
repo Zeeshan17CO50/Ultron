@@ -1,0 +1,109 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 10%;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 70%;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid red;
+  }
+  
+  .button1:hover {
+    background-color: red;
+    color: black;
+    border: 5px solid black;
+  }
+  
+  .button2 {
+    background-color: yellow; 
+    color: blue; 
+    border: 5px solid orangered;
+  }
+  
+  .button2:hover {
+    background-color: gold;
+    color: cornflowerblue;
+    border: 5px solid orangered;
+  }
+  
+  .button3 {
+    background-color: blue; 
+    color: red; 
+    border: 5px solid darkblue;
+  }
+  
+  .button3:hover {
+    background-color: white;
+    color: pink;
+    border: 5px solid darkblue;
+  }
+  
+  .button4 {
+    background-color: silver;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .button4:hover {background-color: #e7e7e7;}
+  
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+
+  #hii{
+      background-color: snow;
+      font-size: 70px;
+      color: Red;
+      border: 5px solid blue;
+      width: 70%;
+      text-align: center;
+      margin-left: 10%;
+  }
+
+  #hii2{
+    background-color: lightcyan;
+    font-size: 50px;
+    color: blue;
+    margin: 0;
+}
+
+.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}

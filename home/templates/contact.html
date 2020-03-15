@@ -14,14 +14,14 @@
 							<li><a href="#"><i class="fa fa-behance" style="color: blue"></i></a></li>
 						</ul>
 					</div>
-					<div class="float-right my-1" >
+					{% comment %} <div class="float-right my-1" >
 						<form class="input-group d-flex flex-row" action="/action_page.php">
 						<input class="form-control mx-1" type="text" placeholder="Username" name="username">
 						<input class="form-control "type="password" placeholder="Password" name="psw">
 						<button class="btn btn-success mx-1" type="submit">Login</button>
 						<button class="btn btn-success mx-1" type="submit">Register</button>
 						</form>
-					</div>
+					</div> {% endcomment %}
            		</div>	
            	</div>	
             <div class="main_menu">
@@ -77,8 +77,8 @@
 					<div class="banner_content text-center">
 						<h2>Contact Us</h2>
 						<div class="page_link">
-							<a href="index.html">Home</a>
-							<a href="contact.html">Contact</a>
+							<a href="{% url 'index' %}">Home</a>
+							<a href="{% url 'contact' %}">Contact</a>
 						</div>
 					</div>
 				</div>

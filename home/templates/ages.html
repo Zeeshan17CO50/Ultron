@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ultron:The Child Learning App.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/age.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sticky.css' %}">
+    
+<style>
+body {font-family: "Lato", sans-serif;
+margin: 0;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+</style>
+</head>
+<body>
+
+<div class="header" id="myHeader">  
+<div id="London" class="tabcontent">
+  <h1>0-4 (Ages)</h1>
+  <p>This Age of students Learn basic like A-Z,</p>
+  <p>Shapes, 1-10, Colors.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h1>5-6</h1>
+  <p>This Age of students Learn like Words,</p>
+  <p>Spelling, 1-100.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h1>7-8</h1>
+  <p>This category of students Learn Basic Grammers,</p>
+  <p>1-1000,Number Names,Basic Maths</p>
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h1>9-10</h1>
+  <p>This category of students Learn Grammers,</p>
+  <p>1-1000,Number Names,Basic Maths</p>
+</div>
+
+<button class="tablink" onclick="openCity('London', this, 'red','button1')" id="defaultOpen">0-4</button>
+<button class="tablink" onclick="openCity('Paris', this, 'green','button2')">5-6</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue','button3')">7-8</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange','button4')">9-10</button>
+<fieldset>
+  <h2 id="hii2">Select Your Proper Age: </h2><br>
+  </fieldset>
+</div>
+
+
+
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>  
+
+  <fieldset id="hii">
+    <a href="four.html"><button class="button button1">0-4</button><hr>
+    <button class="button button2">5-6</button><hr>
+    <button class="button button3">7-8</button><hr>
+    <button class="button button4">9-10</button>
+  </fieldset>
+
+
+<script>
+function openCity(cityName,elmnt,color,button) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.button; i++) {
+    tabcontent[i].style.button = "";
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color
+  elmnt.style.button = button;
+
+
+
+
+  window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+   
+</body>
+</html> 

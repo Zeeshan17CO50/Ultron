@@ -23,3 +23,11 @@ def contact(request):
 
 def profile(request):
     return render(request, 'profile.html')
+
+
+def reg(request):
+    return render(request, 'reg.html')
+
+
+def ages(request):
+    return render(request, 'ages.html')
