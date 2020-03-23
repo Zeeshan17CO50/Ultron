@@ -39,7 +39,7 @@
 				</div>
             </div>
         </section>
-    <span style="font-size:40px;cursor:pointer;color: black" onclick="openNav()">&#9776; COLOR</span>
+    <span style="font-size:40px;cursor:pointer;color: black;" class="my-3" onclick="openNav()">&#9776; COLOR</span>
     <br />
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -69,6 +69,19 @@
 	        <button class="btn btn-success mx-5" onclick='clearCanvas()'>Clear</button>
 	    </div>
 
+
+  <div class="card bg-info p-3 text-white mx-3 w-25" style="margin: 35px;face:verdana;">
+    <div class="card-body" style="text-align: center; font-size: 30px;face:verdana;">Info card</div>
+	<div>
+	<h1 style="color: blue;face:verdana;">How to Draw</h1>
+    <p  style="color: black;font-size: 17px;face:verdana;">
+	First choose the color by clicking the color button which is just above the info card
+	after select the color just start drawing on the board which is just place right hand side 
+	to the info cards & also there is tools like eraser if You have delete some drawing parts
+	and also there is a clear button to clear all the drawing board text or drawing.  
+	</p>
+	</div>
+  </div>
 
 		        <script src="{% static 'js/paint.js' %}"></script>
         <script>
