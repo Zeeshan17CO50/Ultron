@@ -1,0 +1,85 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+{% block content %}
+<head>
+<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static 'img/U.png' %}" type="image/png">
+        <title>Ultron: The Learning App</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/paint.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/popup/magnific-popup.css' %}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+ 
+    <body>
+
+        <section  style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);height:90px;">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2 style="color: darkblue;">PAINTING SECTION</h2>
+						<div class="page_link">
+							<a class="text-heading" href="{% url 'index' %}">Home -></a>
+							<a class="text-heading" href="{% url 'paint' %}">Paint</a>
+						</div>
+				</div>
+            </div>
+        </section>
+    <span style="font-size:40px;cursor:pointer;color: black" onclick="openNav()">&#9776; COLOR</span>
+    <br />
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1 style="color: black;"> Choose Color: </h1>
+	    <div id='colors'>
+	        <button id='black' onclick='changeColor("black")' ontouchstart='changeColor("black")'></button>
+		    <button id='red' onclick='changeColor("red")' ontouchstart='changeColor("red")'></button>
+		    <button id='green' onclick='changeColor("green")' ontouchstart='changeColor("green")'></button>
+		    <button id='blue' onclick='changeColor("blue")' ontouchstart='changeColor("blue")'></button>
+		    <button id='orange' onclick='changeColor("orange")' ontouchstart='changeColor("orange")'></button>
+		    <button id='pink' onclick='changeColor("pink")' ontouchstart='changeColor("pink")'></button>
+            <button id='purple' onclick='changeColor("purple")' ontouchstart='changeColor("purple")'></button>
+            <button id='gray' onclick='changeColor("gray")' ontouchstart='changeColor("gray")'></button>
+            <button id='brown' onclick='changeColor("brown")' ontouchstart='changeColor("brown")'></button>
+            <button id='yellow' onclick='changeColor("yellow")' ontouchstart='changeColor("yellow")'></button>
+            <button id='lightblue' onclick='changeColor("lightblue")' ontouchstart='changeColor("lightblue")'></button>
+            <button id='lightgreen' onclick='changeColor("lightgreen")' ontouchstart='changeColor("lightgreen")'></button>
+            <button id='darkred' onclick='changeColor("darkcyan")' ontouchstart='changeColor("darkcyan")'></button>
+        </div>
+
+		<h1 style="color: black;">TOOLS: </h1>
+		         <button class="btn btn-default" id='white' onclick='changeColor("white")' ontouchstart='changeColor("white")'>Eraser</button>
+		</div>
+       
+	    <canvas id='canvas' width='900' height='500'></canvas>
+	    <div>
+	        <button class="btn btn-success mx-5" onclick='clearCanvas()'>Clear</button>
+	    </div>
+
+
+		        <script src="{% static 'js/paint.js' %}"></script>
+        <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    </body>
+</html>
+{% endblock %}

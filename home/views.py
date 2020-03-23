@@ -28,8 +28,13 @@ def profile(request):
 def reg(request):
     return render(request, 'reg.html')
 
+
 def login(request):
     return render(request, 'login.html')
+
+
+def paint(request):
+    return render(request, 'paint.html')
 
 
 def ages(request):
