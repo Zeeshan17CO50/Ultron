@@ -3,6 +3,81 @@
 {% block content %}
 <!doctype html>
 <html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: dodgerblue;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<link rel="stylesheet" href="css/main.css">
+</head>
+
  <header class="header_area">
            	<div class="top_menu row m0"  style="background-color: lightblue">
            		<div class="container-fluid">
@@ -86,6 +161,34 @@
         <!--================End Home Banner Area =================-->
         
         <!--================About Area =================-->
+		<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column m-auto h-50" style="width:420px;">
+    <div class="card">
+      <img src="{% static 'img/my/a.jpg' %}" alt="Abdul" style="width:100%">
+      <div class="container">
+        <h2>ABDUL REHMAN</h2>
+        <p class="title">TECO (17CO34)</p>
+        <p>Django developer and Interested in ML & AI.</p>
+        <p>mabdul@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column m-auto h-50" style="width:420px;">
+    <div class="card">
+      <img src="{% static 'img/my/z.jpg' %}" alt="Zeeshan" style="width:100%">
+      <div class="container">
+        <h2>ZEESHAN AZAM</h2>
+        <p class="title">TECO (17CO50)</p>
+        <p>Interested in ML, AI and python developer.</p>
+        <p>zeeshan@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  </div>
         <section class="about_area p_120">
         	<div class="container">
         		<div class="main_title">
