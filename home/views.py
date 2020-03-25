@@ -37,5 +37,17 @@ def paint(request):
     return render(request, 'paint.html')
 
 
+def test(request):
+    return render(request, 'test.html')
+
+
+def test2(request):
+    return render(request, 'test2.html')
+
+
+def addition(request):
+    return render(request, 'addition.html')
+
+
 def ages(request):
     return render(request, 'ages.html')

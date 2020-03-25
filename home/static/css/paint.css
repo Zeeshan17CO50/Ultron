@@ -2,7 +2,7 @@
 {
     border: 3px solid black;
     margin: 10px 40px 10px 0px;
-    cursor: pointer;
+    cursor: wait;
     float: right;
 }
 #colors button
