@@ -187,7 +187,7 @@ input{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #0abde3;
+        background-color:coral;
     }
     section h1{
         text-transform: capitalize;
@@ -206,13 +206,14 @@ input{
     
     .centerdiv{
         width: 340px;
-        height: 400px;
-        background-color: #32ff7e;
+        height: 450px;
+        background-color: royalblue;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: 10px;
+        border-radius: 10%;
     }
     
     .insertBox{
@@ -226,8 +227,9 @@ input{
     
     #v1, #v2 {
         text-align: center;
+        border-radius: 100%;
         padding: 20px 0px;
-        width:95px;
+        width:100px;
         font-size: 50px;
         box-shadow: 1px 1px 0px #999,
                     2px 2px 0px #999,
@@ -257,7 +259,7 @@ input{
         text-transform: uppercase;
         color: white;
         border: none;
-        background-color: #079992;
+        background-color: greenyellow;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
