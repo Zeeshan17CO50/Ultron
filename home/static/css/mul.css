@@ -1,0 +1,315 @@
+* { margin: 0; padding: 0;font-family: 'Josefin Sans', sans-serif;}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1170px; } 
+    
+  section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+  }
+  section h1{
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+    animation: zooms 1s linear infinite;
+    animation-direction: alternate;
+    text-align: center;
+  }
+  
+  @keyframes zooms{
+      from{transform: translateX(-20px);}
+      to {transform: translateX(20px);}
+  }
+  
+  .centerdiv{
+    width: 500px;
+    height: 400px;
+    background-color: #32ff7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .insertBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: black;
+  }
+  
+  
+  #v1, #v2 {
+    text-align: center;
+    padding: 20px 0px;
+    width:95px;
+    font-size: 50px;
+    box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;
+  }
+  
+  .box1{
+      font-size: 60px;
+      margin: 0 8px 0 13px;
+  }
+  
+  .middleBox #answ {
+      margin: 30px 0;
+      padding: 10px 0;
+      font-size: 40px;
+      text-align: center;
+      height: 50px;
+      width: 180px;
+  }
+  
+  .sentBox button {
+      padding: 10px 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: white;
+      border: none;
+      background-color: #079992;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+  }
+  
+  }
+
+  
+  @media (min-width: 1620px) {
+    .box_1620 {
+      max-width: 1650px;
+      margin: auto; } }
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+section h1{
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+    animation: zooms 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zooms{
+    from{transform: translateX(-20px);}
+    to {transform: translateX(20px);}
+}
+
+input{
+    color: black;
+}
+.centerdiv{
+    width: 500px;
+    height: 400px;
+    background-color: #32ff7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.insertBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: black;
+}
+
+
+#v1, #v2 {
+    text-align: center;
+    padding: 20px 30px;
+    width:35px;
+    font-size: 30px;
+    box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;
+    color: black;
+    
+}
+
+.box1{
+    font-size: 60px;
+    margin: 0 8px 0 13px;
+}
+
+.middleBox #answ {
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 180px;
+}
+
+.sentBox button {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: #079992;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 991px) {
+
+    section{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0abde3;
+    }
+    section h1{
+        text-transform: capitalize;
+        font-size: 25px;
+        text-shadow: 1px 1px 2px white;
+        animation: zooms 1s linear infinite;
+        animation-direction: alternate;
+        color: white;
+        margin-top: 90px;
+    }
+    
+    @keyframes zooms{
+        from{transform: translateX(-20px);}
+        to {transform: translateX(20px);}
+    }
+    
+    .centerdiv{
+        width: 340px;
+        height: 400px;
+        background-color: #32ff7e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .insertBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    
+    
+    #v1, #v2 {
+        text-align: center;
+        padding: 20px 0px;
+        width:95px;
+        font-size: 50px;
+        box-shadow: 1px 1px 0px #999,
+                    2px 2px 0px #999,
+                    3px 3px 0px #999,
+                    4px 4px 0px #999,
+                    5px 5px 0px #999,
+                    6px 6px 0px #999;
+    }
+    
+    .box1{
+        font-size: 60px;
+        margin: 0 8px 0 13px;
+    }
+    
+    .middleBox #answ {
+        margin: 30px 0;
+        padding: 10px 0;
+        font-size: 40px;
+        text-align: center;
+        height: 50px;
+        width: 180px;
+    }
+    
+    .sentBox button {
+        padding: 10px 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        background-color: #079992;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

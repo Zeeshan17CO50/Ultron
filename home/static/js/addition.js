@@ -5,7 +5,7 @@ var hintBox2;
 var addition;
 var response = ["Better Luck Next Time!", "Keep Trying Hard"]
 var feedback = ["Good Job!", "You are Super Smart", "Keep Going!", "Awesome!", "Great!", "Excellent"];
-var mojis = ["😀", "🐱", "🐶", "🌟", "🐄", "👶", "🔥"];
+var mojis = ["🤡", "💓", "🐶", "🌟", "🐄", "👶", "🔥"];
 var mojisad = ["☹", "😠"];
 var difficulty = 10;
 
@@ -26,13 +26,15 @@ class Addition {
         }
 
         if (ans == "") {
-            window.alert("Please Insert Some Value");
+            window.alert("Please Insert Some Numeric Value");
         }
 
         if (ans != this.answer && ans != "") {
             window.alert("Wrong Answer");
             window.alert(response[Math.floor(Math.random() * 2)]);
         }
+
+        document.getElementById('ans').value = '';
     }
 
 

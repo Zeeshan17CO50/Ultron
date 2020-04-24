@@ -141,8 +141,7 @@
 </div>
 
   <div class="row" style="padding: 10px;">
-
-  <div class="column" style="padding: 30px;">
+  <div class="column" style="padding: 10px;">
     <div class="card-2" style="width: 60%;">
       <a href="{% url 'addition' %}"><input class="user" type="image" src="{% static 'img/a1.gif' %}" alt="Submit" width="80%"
           height="80%"></a>
@@ -150,24 +149,24 @@
     </div>
   </div>
 
-  <div class="column" style="padding: 30px;">
-    <div class="card-2" style="width: 60%;height: 100%;">
-      <a href="#.html"><input class="user" type="image" src="{% static 'img/s1.jpg' %}" alt="Submit" width="80%"
+  <div class="column" style="padding: 10px;">
+    <div class="card-2" style="width: 60%;">
+      <a href="{% url 'sub' %}"><input class="user" type="image" src="{% static 'img/s1.jpg' %}" alt="Submit" width="80%"
           height="80%"></a>
       <h1>Subtraction</h1>
     </div>
   </div>
 
-  <div class="column" style="padding: 30px;">
+  <div class="column" style="padding: 10px;">
     <div class="card-2" style="width: 60%;">
-      <a href="#.html"><input class="user" type="image" src="{% static 'img/m1.jpg' %}" alt="Submit" width="80%" height="80%"></a>
-      <h1>Multiplication</h1>
+      <a href="{% url 'mul' %}"><input class="user" type="image" src="{% static 'img/m1.jpg' %}" alt="Submit" width="80%" height="80%"></a>
+      <h1 class="fa-2x">Multiplication</h1>
     </div>
   </div>
 
-  <div class="column" style="padding: 30px;">
+  <div class="column" style="padding: 10px;">
     <div class="card-2" style="width: 60%;">
-      <a href="#.html"><input class="user" type="image" src="{% static 'img/d1.gif' %}" alt="Submit" width="80%" height="80%"></a>
+      <a href="{% url 'div' %}"><input class="user" type="image" src="{% static 'img/d1.gif' %}" alt="Submit" width="80%" height="80%"></a>
       <h1>Division</h1>
     </div>
   </div>

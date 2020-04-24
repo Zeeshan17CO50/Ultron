@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{% static 'img/U.png' %}" type="image/png">
@@ -21,12 +22,13 @@
         <!-- main css -->
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-<header class="header_area">
-           	<div class="top_menu row m0"  style="background-color: lightblue">
+        <link rel="stylesheet" href="{% static 'css/addition.css' %}">
+        <script src="{% static 'js/addition.js' %}"></script>
+</head>
+
+<body>
+<header class="header_area" style="background-color: lightgray;" >
+	<div class="top_menu row m0"  style="background-color: lightblue">
            		<div class="container-fluid">
 					<div class="float-left">
 						<ul class="list header_social">
@@ -41,7 +43,7 @@
 						<input class="form-control mx-1" type="text" placeholder="Username" name="username">
 						<input class="form-control "type="password" placeholder="Password" name="psw">
 						<button class="btn btn-success mx-1" type="submit">Login</button>
-						<button class="btn btn-success mx-1" type="submit">Register</button>
+						<button class="btn btn-success mx-1" href="{% url 'reg' %}" type="submit">Register</button>
 						</form>
 					</div> {% endcomment %}
            		</div>	
@@ -50,7 +52,7 @@
             		<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="#"><img src="{% static 'img/logo1.jpeg' %}" alt="" width="70px" height="70px"></a>
+						<a class="navbar-brand logo_h" href="index.html"><img src="{% static 'img/logo1.jpeg' %}" alt="" width="70px" height="70px"></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -90,78 +92,24 @@
             	</nav>
             </div>
         </header>
-        <!--================Header Menu Area =================-->
         
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="banner_inner d-flex align-items-center">
-            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-				<div class="container">
-					<div class="banner_content text-center">
-						<h2>Contact Us</h2>
-						<div class="page_link">
-							<a href="{% url 'index' %}">Home</a>
-							<a href="{% url 'contact' %}">Contact</a>
-						</div>
-					</div>
-				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Contact Area =================-->
-        <section class="contact_area p-2">
-            <div class="container">
-<div><div class="gmap_canvas"><iframe width="100px" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=anjuman-i-islam%20kalsekar&t=&z=13&ie=UTF8&iwloc=&output=embed" style="padding: 1px; width: 330px;" frameborder="1px" scrolling="no" marginheight="0" marginwidth="0"></iframe></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:330px;}</style></div>
- <br>        <div class="row">
-                    <div class="col-lg-3">
-                        <div class="contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-home"></i>
-                                <h6>Mumbai, Maharashtra</h6>
-                                <p>New Panvel</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+91 99977 77999</a></h6>
-                                <p>Mon to Fri 9am to 6 pm</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">doc17teco@gmail.com</a></h6>
-                                <p>Send us your query anytime!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--================Contact Area =================-->
-        
-        <!--================ start footer Area  =================-->	
+<body onload="init();">
+<div class="fw100">
+---------------------------------
+</div>
+<section  class="d-inline-block" style="width: 90%;">
+   <div  class="card w-150 d-inline-block" style="background-color: lightgreen">
+      <div class="card-body text-center">
+<h1 style="    margin:1em 1em 1em 1em;font-size: 50px;color: blue;" id="h1">Kids Math</h1>
+<div style="margin:1em 1em 1em 1em;font-size: 40px;color: black;" id="question"></div>       
+<input style="font-size: 40px;color: black;width: 80%;" class="fa-adjust text-center" id="ans" type="number">
+<button class="btn btn-primary m-3 " onclick="checkAnswer()">Check</button>
+<div style="margin:1em 1em 1em 1em;font-size: 20px;color: black;" id="hint1"></div>
+<div style="margin:1em 1em 1em 1em;font-size: 20px;color: black;" id="hint2"></div>
+</div>
+</div>
+<br><br>
+</section>
         <footer class="footer-area p_120">
             <div class="container">
                 <div class="row">

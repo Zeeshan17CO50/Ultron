@@ -4,19 +4,24 @@
 <!doctype html>
 <html lang="en">
 <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static 'img/U.png' %}" type="image/png">
+        <title>Ultron: The Learning App</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/popup/magnific-popup.css' %}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 .column {
   float: left;
@@ -37,19 +42,6 @@ html {
   color: white;
 }
 
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
 
 .button {
   border: none;
@@ -88,14 +80,6 @@ html {
 							<li><a href="#"><i class="fa fa-dribbble" style="color: blue"></i></a></li>
 							<li><a href="#"><i class="fa fa-behance" style="color: blue"></i></a></li>
 						</ul>
-					</div>
-					<div class="float-right my-1" >
-						<form class="input-group d-flex flex-row" action="/action_page.php">
-						<input class="form-control mx-1" type="text" placeholder="Username" name="username">
-						<input class="form-control "type="password" placeholder="Password" name="psw">
-						<button class="btn btn-success mx-1" type="submit">Login</button>
-						<button class="btn btn-success mx-1" type="submit">Register</button>
-						</form>
 					</div>
            		</div>	
            	</div>	
@@ -163,7 +147,7 @@ html {
         <!--================About Area =================-->
 		<h2 style="text-align:center">Our Team</h2>
 <div class="row">
-  <div class="column m-auto h-50" style="width:420px;">
+  <div class="column m-auto h-50" style="width:350px;height: 250px;">
     <div class="card">
       <img src="{% static 'img/my/a.jpg' %}" alt="Abdul" style="width:100%">
       <div class="container">
@@ -176,7 +160,7 @@ html {
     </div>
   </div>
 
-  <div class="column m-auto h-50" style="width:420px;">
+  <div class="column m-auto h-50" style="width:350px;">
     <div class="card">
       <img src="{% static 'img/my/z.jpg' %}" alt="Zeeshan" style="width:100%">
       <div class="container">
@@ -492,6 +476,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </footer>
     </body>
-
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/stellar.js' %}"></script>
+        <script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
+        <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'vendors/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+        <script src="{% static 'js/mail-script.js' %}"></script>
+        <script src="{% static 'js/theme.js' %}"></script>
 </html>
 	{% endblock %}

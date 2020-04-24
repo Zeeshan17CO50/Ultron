@@ -46,8 +46,20 @@ def test2(request):
 
 
 def addition(request):
-    return render(request, 'addition.html')
+    return render(request, 'addition2.html')
 
 
 def ages(request):
     return render(request, 'ages.html')
+
+
+def sub(request):
+    return render(request, 'sub.html')
+
+
+def mul(request):
+    return render(request, 'mul.html')
+
+
+def div(request):
+    return render(request, 'div.html')

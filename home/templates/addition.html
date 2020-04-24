@@ -23,8 +23,10 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
         <link rel="stylesheet" href="{% static 'css/addition.css' %}">
+        <script src="{% static 'js/addition.js' %}"></script>
 </head>
 
+<body>
 <header class="header_area" style="background-color: lightgray;" >
 	<div class="top_menu row m0"  style="background-color: lightblue">
            		<div class="container-fluid">
@@ -91,21 +93,24 @@
             </div>
         </header>
         
-<body onload="init();" class="m-5">
-   <div  class="card bg-primary w-50 d-inline-block">
+<body onload="init();">
+<div class="fw100">
+Right Answer
+</div>
+<section  class="m-2 d-inline-block" style="width: 80%;">
+   <div  class="card w-50 d-inline-block" style="background-color: lightgreen">
       <div class="card-body text-center">
-<h1 style="    margin:1em 1em 1em 1em;font-size: 60px;color: black;" id="h1">Kids Math</h1>
+<h1 style="    margin:1em 1em 1em 1em;font-size: 60px;color: blue;" id="h1">Kids Math</h1>
 <div style="margin:1em 1em 1em 1em;font-size: 40px;color: black;" id="question"></div>       
-<input style="font-size: 40px;color: black;" class="fa-adjust text-center" id="ans" type="number">
-<button class="btn btn-success m-3 " onclick="checkAnswer()">Check</button>
+<input style="font-size: 40px;color: black;width: 80%;" class="fa-adjust text-center" id="ans" type="number">
+<button class="btn btn-primary m-3 " onclick="checkAnswer()">Check</button>
 <div style="margin:1em 1em 1em 1em;font-size: 40px;color: black;" id="hint1"></div>
 <div style="margin:1em 1em 1em 1em;font-size: 40px;color: black;" id="hint2"></div>
 </div>
 </div>
 <br><br>
-
-
-        <footer class="footer-area p_120 m-0">
+</section>
+        <footer class="footer-area p_120">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2  col-md-6 col-sm-6">
@@ -183,12 +188,44 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 </div>
             </div>
         </footer>
+		<!--================ End footer Area  =================-->
+        
+        <!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Thank you</h2>
+                        <p>Your message is successfully sent...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modals error -->
 
-
-<script src="{% static 'js/addition.js' %}"></script>
-
- <!-- Optional JavaScript -->
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Sorry !</h2>
+                        <p> Something went wrong </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
         <script src="{% static 'js/popper.js' %}"></script>
@@ -205,7 +242,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
         <script src="{% static 'js/mail-script.js' %}"></script>
         <script src="{% static 'js/theme.js' %}"></script>
-</body>
 
+        <!-- contact js -->
+        <script src="{% static 'js/jquery.form.js' %}"></script>
+        <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'js/contact.js' %}"></script>
+        <!--gmaps Js-->
+        <script src="{% static 'js/map.js' %}"></script>
+        <script src="{% static 'js/gmaps.min.js' %}"></script>
+        <script src="{% static 'js/theme.js' %}"></script>
+    </body>
 </html>
 {% endblock %}
